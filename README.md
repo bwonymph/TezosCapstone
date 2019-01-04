@@ -1,2 +1,1 @@
-# TezosCapstone
-Tezos Capstone Website
+# Tezos HackCamp Website
