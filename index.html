@@ -1,225 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Tezos Capstone</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Learn to develop on Tezos!" name="description">
-  <meta name="keywords" content="" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tezos Capstone</title>
+    <meta name="description" content="Learn to build on Tezos" />
+    <meta name="keywords" content="Tezos, blockchain, crypto, decentralized, education" />
+    <meta name="author" content="TCF, ZS Blockchain" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#663fb5">
+    <link rel="stylesheet" href="css/landio.css">
+  </head>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <body>
 
-  <!-- Bootstrap css -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Navigation
+    ================================================== -->
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <header id="header" class="header header-hide">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto"><span>Tezos</span>Capstone</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+        &#9776;
+      </a>
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+          <span class="icon-user"></span>
+        </a>
+        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="ui-elements.html">Sign Up</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="curriculum/index.html" target="_blank">Curriculum</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#get-started">Get Started</a></li>
-          <li><a href="#about-us">About</a></li>
-          <!--<li><a href="#screenshots">Screenshots</a></li>-->
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
+    <!-- Hero Section
+    ================================================== -->
 
-  <!--==========================
-    Hero Section
-  ============================-->
-  <section id="hero" class="wow fadeIn">
-    <div class="hero-container">
-      <h1>Welcome to Tezos Capstone</h1>
-      <h2>Learn How To Become A Tezos Developer</h2>
-      <img src="img/hero-img-copy.png" alt="Hero Imgs">
-      <a class="typeform-share button" href="https://jackiezhang2.typeform.com/to/vGiFqw" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#1DAEEB;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-      <br>
-      <p>If already signed up, go to curriculum</p>
-      <a class="button" href="javascript:void(0);" onclick="javascript:window.location.href='curriculum/index.html';" style="display:inline-block;text-decoration:none;background-color:#1DAEEB;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Curriculum</a>
-
-    </div>
-  </section><!-- #hero -->
-
-  <!--==========================
-    Get Started Section
-  ============================-->
-  <section id="get-started" class="padd-section text-center wow fadeInUp">
-
-    <div class="container">
-      <div class="section-title text-center">
-
-        <h2>What is Tezos Capstone?</h2>
-        <p>Tezos Capstone is a new initiative created to bring developers into the Tezos ecosystem. Developers will take on challenges that will cover core Tezos concepts and dApp development.</p>
-
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
+      <div class="container">
+        <h1 class="display-3">Tezos Capstone</h1>
+        <h2 class="m-b-3">Become a Tezos Developer and build something</h2>
+        <a class="typeform-share button" href="https://jackiezhang2.typeform.com/to/vGiFqw" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#1DAEEB;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <br>
+        <p>If already signed up, go to curriculum</p>
+        <a class="button" href="javascript:void(0);" onclick="javascript:window.location.href='curriculum/index.html';" style="display:inline-block;text-decoration:none;background-color:#1DAEEB;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Curriculum</a>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <div class="row">
+    <!-- Intro
+    ================================================== -->
 
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-block">
+    <section id="about"class="section-intro bg-faded text-xs-center">
+      <div class="container">
+        <h3 class="wp wp-1">Start your path as a Tezos blockchain developer</h3>
+        <p class="lead wp wp-2">Tezos Capstone is a new initiative focused on introducing more developers into the Tezos ecosystem. Developers learn core blockchain and Tezos concepts, and practical dApp development experience. </p>
+        <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
+      </div>
+    </section>
 
-            <img src="img/svg/cloud.svg" alt="img" class="img-fluid">
-            <h4>Introducing Blockchain</h4>
-            <p>Introduction to blockchain and decentralized applications</p>
-<!--             <a href="#">read more</a>
- -->
+    <!-- Features
+    ================================================== -->
+
+    <section class="section-features text-xs-center">
+      <div class="container">
+        <h3 class="text-xs-center">The Tezos Capstone Curriculum</h3>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <!-- <span class="icon-pen display-1"></span> -->
+                <img src="img/cloud.svg" alt="iPad mock" class="wp wp-3" style="height:100px; position:center; padding-bottom:20px;">
+                <h4 class="card-title">Theory</h4>
+                <h6 class="card-subtitle text-muted">Section 1</h6>
+                <p class="card-text">Introducing the basics of blockchain and Tezos. Learn about decentralized applications, autonomous smart contracts and the mechanics of blockchain.</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-block">
-
-            <img src="img/svg/planet.svg" alt="img" class="img-fluid">
-            <h4>Tezos Smart Contracts</h4>
-            <p>Learn more about the Tezos Blockchain Platform and Tezos Smart Contracts</p>
-<!--             <a href="#">read more</a>
- -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <!-- <span class="icon-thunderbolt display-1"></span> -->
+                <img src="img/planet.svg" alt="iPad mock" class="wp wp-3" style="height:100px; position:center; padding-bottom:20px;">
+                <h4 class="card-title">Simple dApp</h4>
+                <h6 class="card-subtitle text-muted">Section 2</h6>
+                <p class="card-text">Learn about blockchain development and build your first Tezos dApp!</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-block">
-
-            <img src="img/svg/asteroid.svg" alt="img" class="img-fluid">
-            <h4>Building DAPPS</h4>
-            <p>Step-by-step guide to building your first dApp (decentralized application)</p>
-<!--             <a href="#">read more</a>
- -->
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!--==========================
-    About Us Section
-  ============================-->
-  <section id="about-us" class="about-us padd-section wow fadeInUp">
-    <div class="container">
-      <div class="row justify-content-center">
-
-
-
-        <div class="col-md-7 col-lg-5">
-          <div class="about-content">
-
-            <h2><span>Tezos</span>Developer Curriculum </h2>
-            <p>The Tezos Capstone Developer Curriculum is a set of challenges that will provide the knowledge and skills needed to become a Tezos developer. These challenges will cover foundational Tezos concepts, introducing key tools, best practices, and other aspects of smart contract and dApp development including building a front end.
-            </p>
-
-            <ul class="list-unstyled">
-              <li><i class="fa fa-angle-right"></i>Part 1: "Learn the Basics"</li>
-              <li><i class="fa fa-angle-right"></i>Part 2: “Practice Challenge”</li>
-              <li><i class="fa fa-angle-right"></i>Part 3: “Real World Challenge”</li>
-              <li><i class="fa fa-angle-right"></i>Part 4: "Hackathon"</li>
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!--==========================
-    Features Section
-  ============================-->
-
-  <section id="features" class="padd-section text-center wow fadeInUp">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Components</h2>
-        <div class="component-container">
-          <h3>Part 1: "Learn the Basics"</h3>
-          <h>Cover foundational Tezos concepts, introducing key tools, best practices, and other aspects of smart contract and dApp development including building a front end.</h>
-          <br>
-          <br>
-          <h3>Part 2: “Practice Challenge”</h3>
-          <h>Continue your Tezos developer journey by learning how to program with Liquidity to program smart contracts and connecting them to your front-end.</h>
-          <br>
-          <br>
-          <h3>Part 3: “Real World Challenge”</h3>
-          <h>Test your skills by coming up with your own projects and smart contracts based on real world scenarios.</h>
-        </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 col-lg-4">
-          <div class="footer-logo">
-
-            <a class="navbar-brand" href="#">Tezos Capstone</a>
-            <p>Tezos Capstone is an educational workshop series dedicated to helping developers learn about the Tezos platform and Tezos smart contract development.</p>
-
+          <div class="col-md-4">
+            <div class="card m-b-0">
+              <div class="card-block">
+                <img src="img/asteroid.svg" alt="iPad mock" class="wp wp-3" style="height:100px; position:center; padding-bottom:20px;">
+                <!-- <span class="icon-heart display-1"></span> -->
+                <h4 class="card-title">Capstone</h4>
+                <h6 class="card-subtitle text-muted">Section 3</h6>
+                <p class="card-text">The Tezos Capstone is the final project of the course, building your own dApp for the Tezos blockchain! </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Sign Up
+    ================================================== -->
 
+    <section class="section-signup bg-faded">
+      <div class="container">
+        <h3 class="text-xs-center m-b-3"><a href="https://jackiezhang2.typeform.com/to/vGiFqw" style="text-decoration: underline">Sign up</a> and begin your journey with Tezos Capstone!</h3>
+          <div class="row">
+          </div>
+      </div>
+    </section>
 
-  </footer>
+    <!-- Footer
+    ================================================== -->
 
+    <footer class="section-footer bg-inverse" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
+            <div class="media">
+              <small class="media-body media-bottom">
+                &copy; Tezos Capstone 2018. <br>
+                An initiative by the Tezos Commons Foundation in collaboration with ZS Blockchain
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/modal-video/js/modal-video.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/landio.min.js"></script>
+  </body>
 </html>
