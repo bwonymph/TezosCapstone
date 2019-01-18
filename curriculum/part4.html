@@ -6,17 +6,17 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Part 4: Introduction to Tezos Pt 2 &#8212; Tezos Capstone January 11, 2019 documentation</title>
-    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
+    <title>Part 4: Introduction to Tezos Pt 2 &#8212; Tezos Capstone January 17, 2019 documentation</title>
+    <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <script type="text/javascript" src="static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Part 3: Blockchain 201" href="emacs_help.html" /> 
+    <link rel="prev" title="Part 3: Blockchain 201" href="part3.html" /> 
   </head><body>
 
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
@@ -30,7 +30,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="emacs_help.html" title="Part 3: Blockchain 201"
+          <a href="part3.html" title="Part 3: Blockchain 201"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
@@ -60,12 +60,12 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="emacs_help.html"
+  <p class="topless"><a href="part3.html"
                         title="previous chapter">Part 3: Blockchain 201</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/ipython_directive.rst.txt"
+      <li><a href="_sources/part4.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -90,7 +90,7 @@
           <div class="body" role="main">
             
   <div class="section" id="part-4-introduction-to-tezos-pt-2">
-<span id="ipython-directive"></span><h1>Part 4: Introduction to Tezos Pt 2<a class="headerlink" href="#part-4-introduction-to-tezos-pt-2" title="Permalink to this headline">¶</a></h1>
+<span id="part4"></span><h1>Part 4: Introduction to Tezos Pt 2<a class="headerlink" href="#part-4-introduction-to-tezos-pt-2" title="Permalink to this headline">¶</a></h1>
 <p>Now with our blockchain background, let’s look at an overview of Tezos.</p>
 <div class="section" id="self-amendment">
 <h2>Self-Amendment<a class="headerlink" href="#self-amendment" title="Permalink to this headline">¶</a></h2>
@@ -123,7 +123,7 @@
 <div class="section" id="architecture">
 <h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h2>
 <p>The diagram below shows a very coarse grained architecture of Tezos.</p>
-<img alt="_images/tezos_png.png" src="_images/tezos_png.png" />
+<img alt="_images/tezos_png.png" src="images/tezos_png.png" />
 <p>The characteristic that makes Tezos unique is its self-amending property. The part that amends itself is called the economic protocol (the green eye of the octopus), sometimes abbreviated by protocol or even proto in the source code. The rest of a Tezos node is what we call the shell (the blue octopus).</p>
 <p>The protocol is responsible for interpreting the transactions and other administrative operations. It also has the responsibility to detect erroneous blocks. An important thing to notice is that the protocol always sees only one block chain. In other words, a linear sequence of blocks since the genesis. It does not know that it lives in an open network where nodes can propose alternative heads.</p>
 <p>Only the shell knows about the multiple heads. It is responsible for choosing between the various chain proposals that come from the bakers (the programs that cook new blocks) of the network. The shell has the responsibility of selecting and downloading alternative chains, feed them to the protocol, which in turn has the responsibility to check them for errors, and give them an absolute score. The shell then simply selects the valid head of highest absolute score. This part of the shell is called the validator.</p>
@@ -137,6 +137,8 @@
 <p><a class="reference external" href="http://tezos.gitlab.io/mainnet/whitedoc/proof_of_stake.html/">Tezos Proof of Stake</a></p>
 <div class="section" id="credit-to-dynamic-ledger-solutions">
 <h3>Credit to Dynamic Ledger Solutions<a class="headerlink" href="#credit-to-dynamic-ledger-solutions" title="Permalink to this headline">¶</a></h3>
+<br>
+<a class="typeform-share button" href="https://jackiezhang2.typeform.com/to/am359b" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#1DAEEB;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:35px;text-align:center;margin:0;height:35px;padding:0px 23px;border-radius:8px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="0" target="_blank">Quiz </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 </div>
 </div>
 </div>
@@ -154,7 +156,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="emacs_help.html" title="Part 3: Blockchain 201"
+          <a href="part3.html" title="Part 3: Blockchain 201"
              >previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
@@ -162,7 +164,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Jackie Zhang &amp; Kent Makishima.
+        &#169; Copyright 2019, TCF &amp; ZS Blockchain.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
     </div>
   </body>

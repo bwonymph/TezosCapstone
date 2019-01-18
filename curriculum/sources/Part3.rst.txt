@@ -1,4 +1,4 @@
-.. _emacs_help:
+.. _part3:
 
 
 ******************************************
@@ -89,4 +89,4 @@ Additional readings
 
 Next Part
 -----------------
-:ref:`ipython_directive`.
+:ref:`part4`.
